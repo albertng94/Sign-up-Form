@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 30 37.5"
+   version="1.1"
+   x="0px"
+   y="0px"
+   id="svg4"
+   sodipodi:docname="map-icon.svg"
+   inkscape:version="1.3.1 (91b66b0, 2023-11-16)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="22.174869"
+     inkscape:cx="25.546938"
+     inkscape:cy="15.152288"
+     inkscape:window-width="2490"
+     inkscape:window-height="1376"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2" />
+  <title
+     id="title1">Adventure</title>
+  <desc
+     id="desc1">Created with Sketch.</desc>
+  <g
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     id="g3">
+    <path
+       d="M9.50004069,27.0000407 C5.91018982,27.0000407 3.00004069,24.0898916 3.00004069,20.5000407 C3.00004069,16.9101898 5.91018982,14.0000407 9.50004069,14.0000407 C13.0898916,14.0000407 16.0000407,16.9101898 16.0000407,20.5000407 C16.0000407,24.0898916 13.0898916,27.0000407 9.50004069,27.0000407 Z M9.5,25 C11.9852814,25 14,22.9852814 14,20.5 C14,18.0147186 11.9852814,16 9.5,16 C7.01471863,16 5,18.0147186 5,20.5 C5,22.9852814 7.01471863,25 9.5,25 Z M8.5,19.5 L12,18 L10.5,21.5 L7,23 L8.5,19.5 Z"
+       fill="#000000"
+       id="path1"
+       style="fill:#000000" />
+    <g
+       transform="translate(3.000000, 3.000000)"
+       fill="#000000"
+       id="g2">
+      <path
+         d="M7,9.0145304 C6.83457353,9.00493537 6.6678777,9.00007121 6.50004578,9.00007121 C3.89251009,9.00007121 1.55920907,10.1742094 -3.33066907e-16,12.0226284 L0,8.34991577 L0.979480635,9.64973048 L3.23836297,7.94754054 L2.03473293,6.35026952 L4.16333634e-16,7.88355076 L0,5.47570801 L0.5,4.5 L0,4.04327393 L0,2.4 L3.75310858,1.29875657 L4.4887085,2.0355835 L5.22757063,0.708971747 L7,1.77635684e-15 L7,9.0145304 Z M15,17.5133285 C15.0000068,17.5088983 15.0000102,17.5044674 15.0000102,17.5000356 C15.0000102,17.4956038 15.0000068,17.4911729 15,17.4867427 L15,2.4 L18.0110988,1.59704033 L19,2.5 L20.0521701,1.05275464 L24,0 L24,2 L23,3 L24,4 L24,9.5 L24,19.6 L18.9523809,20.9460318 L17.4158297,20.3557787 L16.4656643,21.6091562 L15,22 L15,17.5133285 Z M14,13.496474 C12.7942127,11.2423645 10.6019341,9.59526015 8,9.13199678 L8,0 L11.0230853,0.971080924 L11.5,2 L12.6042371,1.73003381 L14,2.4 L14,7.54427374 L12.5887385,6.31748284 L11.2766204,7.826902 L13.4112615,9.68251716 L14,9.00525098 L14,13.496474 Z M4.14206622,7.2995078 L6.37089721,5.55815418 L5.13957426,3.98213267 L2.91074327,5.72348629 L4.14206622,7.2995078 Z M19.7234037,12.6376173 L21.9748737,14.8890873 L23.3890873,13.4748737 L21.1376173,11.2234037 L23.5731467,8.78787429 L22.0444091,7.25913665 L19.6088796,9.69466608 L17.0251263,7.1109127 L15.6109127,8.52512627 L18.1946661,11.1088796 L15.9294585,13.3740872 L17.4581962,14.9028249 L19.7234037,12.6376173 Z M8.28371132,4.76686237 L10.352292,6.69584503 L11.7162887,5.23313763 L9.64770804,3.30415497 L8.28371132,4.76686237 Z"
+         id="path2"
+         style="fill:#000000" />
+    </g>
+  </g>
+  <text
+     x="0"
+     y="45"
+     fill="#000000"
+     font-size="5px"
+     font-weight="bold"
+     font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+     id="text3">Created by Guilherme Schmitt</text>
+  <text
+     x="0"
+     y="50"
+     fill="#000000"
+     font-size="5px"
+     font-weight="bold"
+     font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+     id="text4">from the Noun Project</text>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Adventure</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
