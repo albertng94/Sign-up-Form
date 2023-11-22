@@ -1,20 +1,27 @@
 * {
-    outline: white solid 1px;
+    outline: 
 }
-    
+
+/* HEADER SECTION */
+  
 html {
     height: 99vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(12px + 0.5vh);
+    color: rgb(196, 196, 196);
 }
     
 body {
     display: flex;
     height: 100%;
+    background-color: black;
 }
     
 #intro-div {
     min-height: 100%;
     min-width: 40%;
-    background-image: url("../images/venti-views-jhfDFVBCoKs-unsplash.jpg");
+    background-image: url("../images/caleb-smith-p9JHJ2DAl5c-unsplash.jpg");
     background-size: cover;
     outline: 4px cyan solid;
     display: flex;
@@ -41,6 +48,9 @@ body {
 
 #header-div > h1 {
     color: white;
+    font-size: 2rem;
+    line-height: calc(1ex / 0.42);
+    letter-spacing: 0.1ex;
 }
     
 #footer-div {
@@ -53,12 +63,83 @@ body {
 #footer-div > p {
     color: white;
 }
-    
-#form-div {
-    outline: 4px purple solid;
-    background-color: black;
-    min-width: 60%;
+
+
+/* FORM SECTION */
+
+p {
+    font-weight: 500;
+    line-height: calc(1ex / 0.32);
+    letter-spacing: 0.1ex;
 }
 
+h2 {
+    font-size: 1.5rem;
+    color: white;
+    line-height: calc(1ex / 0.42);
+    letter-spacing: 0.1ex;
+}
 
-/*Get lost, but find your way back.
+label {
+    font-size: 0.75rem;
+    line-height: calc(1ex / 0.32);
+    color: rgb(98, 97, 97);
+}
+
+input {
+    border: 1px solid rgb(98, 97, 97);
+    background-color: transparent;
+    width: max(300px, 20vw);
+    height: 1rem;
+    border-radius: 4px;
+}
+
+#form-div {
+    outline: 4px purple solid;
+    margin-top: 15vh;
+    padding: 3vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+p.form-cue {
+    margin-top: 10vh;
+    margin-bottom: 2.3vh;
+}
+
+form > div {
+    display: flex;
+    gap: 2rem;
+}
+
+form > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    max-width: 280px;
+    padding: 20px;
+    margin-top: 3vh;
+    border: solid 4px rgb(196, 196, 196);
+    border-radius: 8px;
+    background-color: transparent;
+    color: rgb(196, 196, 196);;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.login {
+    margin-top: 1.75vh;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.login a {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
