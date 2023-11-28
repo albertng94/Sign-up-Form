@@ -16,7 +16,7 @@
             <h1>Routemap</h1>
         </div>
         <div id="footer-div">
-            <p>Picture from <a href="https://unsplash.com/es/@caleb_smithy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Caleb Smith</a> at <a href="https://unsplash.com/es/fotos/una-persona-saltando-en-el-aire-en-un-bosque-jhfDFVBCoKs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+            <p>Picture from <a href="https://unsplash.com/es/@caleb_smithy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Caleb Smith</a> at <a href="https://unsplash.com/es">Unsplash</a></p>
         </div>
     </div>
         
@@ -27,40 +27,51 @@
         <form action="../js/javascript.js" method="post">
             
             <div>
-                <div>
+                <fieldset>
                     <label for="name">NAME</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div>
+                    <div title="Accepts only letters." class="input-div"><input type="text" name="name" id="name" required><span></span></div>
+                    <p>*Accepts only letters.</p>
+                </fieldset>
+                <fieldset>
                     <label for="surname">SURNAME</label>
-                    <input type="text" name="surname" id="surname">
-                </div>
+                    <div title="Accepts only letters." class="input-div"><input type="text" name="surname" id="surname" required><span></span></div>
+                    <p>*Accepts only letters.</p>
+                </fieldset>
             </div>
 
             <div>
-                <div>
+
+                <fieldset>
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
+                    <div class="input-div"><input type="email" name="email" id="email" pattern="[A-Za-z0-9.-_+]+@[A-Za-z0-9.-_+]+\.[a-z]{2,}" required><span></span></div>
+                    <p></p>
+                </fieldset>
+                
+                <fieldset>
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
-                </div>
+                    <div class="input-div"><input title='Must be preceded by the country prefix number (E.g. +34 for spanish numbers).' type="tel" name="phone" id="phone" required><span></span></div>
+                    <p>*Must be preceded by the country prefix number (E.g. +34 for spanish numbers).</p>
+                </fieldset>
             </div>
             
             <div>
-                <div>
+                <fieldset>
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <div>
+                    <div class="input-div"><input title="Must be at least 8 characters and contain upper-case and lower-case letters, numbers, and special characters." type="text" name="password" id="password" pattern="[a-zA-Z0-9]{8,}" required><span></span></div>
+                    <p>*Must be at least 8 characters.</p>
+                    <p>*Must contain upper-case and lower-case letters, numbers, and special characters.</p>
+                </fieldset>
+                <fieldset>
                     <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" name="password-confirm" id="password-confirm">
-                </div>
+                    <div class="input-div"><input title="Must be at least 8 characters and contain upper-case and lower-case letters, numbers, and special characters." type="password" name="password-confirm" id="password-confirm" pattern="[a-zA-Z0-9]{8,}" required><span></span></div>
+                    <p>*Must be at least 8 characters.</p>
+                    <p>*Must contain upper-case and lower-case letters, numbers, and special characters.</p>
+                </fieldset>
             </div>
             <button type="submit">Create Account</button>
         </form>
         <p class="login">Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
+<script src="./js/javascript.js" defer></script>
 </html>

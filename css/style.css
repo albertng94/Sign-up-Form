@@ -15,7 +15,7 @@ html {
 body {
     display: flex;
     height: 100%;
-    background-color: black;
+    background-image: linear-gradient(rgb(18, 17, 17) 20% 80%, rgb(33, 31, 31) 90%);
 }
     
 #intro-div {
@@ -32,7 +32,6 @@ body {
 #header-div {
     margin-top: 20vh;
     height: 15vh;
-    outline: orange solid 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,12 +55,24 @@ body {
 #footer-div {
     align-self: center;
     justify-self: flex-end;
-    outline: orange solid 4px;
-    
 }
     
-#footer-div > p {
+#footer-div > p,
+#footer-div > p > a {
     color: white;
+}
+
+#footer-div > p > a:visited {
+    color: rgb(198, 86, 213);
+}
+
+#footer-div > p > a:hover,
+#footer-div > p > a:focus {
+    color: rgb(2, 194, 194);
+}
+
+#footer-div > p > a:active {
+    color: rgb(248, 80, 108);
 }
 
 
@@ -89,15 +100,18 @@ label {
 input {
     border: 1px solid rgb(98, 97, 97);
     background-color: transparent;
+    color: rgb(98, 97, 97);
     width: max(300px, 20vw);
     height: 1rem;
     border-radius: 4px;
 }
 
 #form-div {
-    outline: 4px purple solid;
+    
     margin-top: 15vh;
-    padding: 3vw;
+    margin-bottom: 15vh;
+    padding: 0 3vw 3vw 3vw;
+    box-shadow: 0.25rem 0.25rem 0.5rem black;
 }
 
 form {
@@ -113,24 +127,45 @@ p.form-cue {
 
 form > div {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
-form > div > div {
+fieldset {
     display: flex;
     flex-direction: column;
+    border: none;
+    margin: 0;
+    padding: 0 0;
+}
+
+fieldset > p {
+    margin: 0;
+    font-size: 0.6rem;
+    line-height: calc(0.75ex / 0.32);
+    color: transparent;
+    width: max(300px, 20vw);
+    /*position: absolute;*/
 }
 
 button {
     max-width: 280px;
     padding: 20px;
     margin-top: 3vh;
-    border: solid 4px rgb(196, 196, 196);
+    border: solid 4px white;
     border-radius: 8px;
     background-color: transparent;
-    color: rgb(196, 196, 196);;
+    color: white;
     font-size: 1.1rem;
     font-weight: bold;
+    transition-duration: 200ms;
+}
+
+button:focus,
+button:hover {
+    border: solid 4px transparent;
+    color: black;
+    background-color: white;
+    cursor: pointer;
 }
 
 .login {
@@ -140,6 +175,84 @@ button {
 }
 
 .login a {
+    text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
+    color: white;
 }
+
+.login a:visited {
+    color: rgb(198, 86, 213);
+}
+
+.login a:hover,
+.login a:focus {
+    color: rgb(2, 194, 194);
+}
+
+.login a:active {
+    color: rgb(248, 80, 108);
+}
+
+
+
+
+/* CLIENT-VALIDATION STYLING */
+
+.input-div {
+    position: relative;
+}
+
+input:focus {
+    border: 2px solid rgb(196, 196, 196);
+    color: rgb(196, 196, 196);
+}
+
+fieldset:focus-within > label {
+    color: rgb(196, 196, 196);
+}
+
+input:valid {
+    border: 2px solid rgb(196, 196, 196);
+    color: rgb(196, 196, 196);
+}
+
+input:valid + span::after {
+    content: "✓";
+    font-weight: 400;
+    color: rgb(196, 196, 196);
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+
+fieldset:valid > label {
+    color: rgb(196, 196, 196);
+}
+
+input:user-invalid {
+    border: 2px solid rgb(237, 94, 94);
+    color: rgb(237, 94, 94);
+}
+
+input:user-invalid + span::after {
+    content: "✗";
+    font-weight: 400;
+    color: rgb(237, 94, 94);
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+
+fieldset:focus-within > p {
+    color: white;
+}
+
+/*Faltará pintar de rojo labels y los p cuando input esté en rojo.
+
+Hacer que el div del form sea de un gris oscuro en vez de negro
+y darle un sombreado para que quede pro.
+
+Comparar con otros navegadores y ver si hay diferencias en los forms. 
+Si así fuera, utilizar "all: unset" para quitar el styling de estos y
+re-hacerlo totalmente.
