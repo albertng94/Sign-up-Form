@@ -228,7 +228,7 @@ fieldset:valid > label {
 
 input:user-invalid {
     border: 2px solid rgb(237, 94, 94);
-    color: rgb(237, 94, 94) !important;
+    color: rgb(237, 94, 94);
 }
 
 input:user-invalid + span::after {

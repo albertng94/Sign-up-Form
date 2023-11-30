@@ -20,7 +20,7 @@ function passwordMatch() {
     }
 }
 
-password.addEventListener("change", () => {
+password.addEventListener("input", () => {
     passwordMatch();
 });
 
