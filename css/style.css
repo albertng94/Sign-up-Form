@@ -1,7 +1,3 @@
-* {
-    outline: 
-}
-
 /* HEADER SECTION */
   
 html {
@@ -23,7 +19,6 @@ body {
     min-width: 40%;
     background-image: url("../images/caleb-smith-p9JHJ2DAl5c-unsplash.jpg");
     background-size: cover;
-    outline: 4px cyan solid;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,6 +55,7 @@ body {
 #footer-div > p,
 #footer-div > p > a {
     color: white;
+    font-size: 0.75rem;
 }
 
 #footer-div > p > a:visited {
@@ -232,7 +228,7 @@ fieldset:valid > label {
 
 input:user-invalid {
     border: 2px solid rgb(237, 94, 94);
-    color: rgb(237, 94, 94);
+    color: rgb(237, 94, 94) !important;
 }
 
 input:user-invalid + span::after {
@@ -249,9 +245,6 @@ fieldset:focus-within > p {
 }
 
 /*Faltará pintar de rojo labels y los p cuando input esté en rojo.
-
-Hacer que el div del form sea de un gris oscuro en vez de negro
-y darle un sombreado para que quede pro.
 
 Comparar con otros navegadores y ver si hay diferencias en los forms. 
 Si así fuera, utilizar "all: unset" para quitar el styling de estos y

@@ -29,12 +29,12 @@
             <div>
                 <fieldset>
                     <label for="name">NAME</label>
-                    <div title="Accepts only letters." class="input-div"><input type="text" name="name" id="name" required><span></span></div>
+                    <div title="Accepts only letters." class="input-div"><input type="text" name="name" id="name" pattern="[a-zA-Z ]{1,30}" required><span></span></div>
                     <p>*Accepts only letters.</p>
                 </fieldset>
                 <fieldset>
                     <label for="surname">SURNAME</label>
-                    <div title="Accepts only letters." class="input-div"><input type="text" name="surname" id="surname" required><span></span></div>
+                    <div title="Accepts only letters." class="input-div"><input type="text" name="surname" id="surname" pattern="[a-zA-Z ]{1,30}" required><span></span></div>
                     <p>*Accepts only letters.</p>
                 </fieldset>
             </div>
@@ -49,7 +49,7 @@
                 
                 <fieldset>
                     <label for="phone">PHONE NUMBER</label>
-                    <div class="input-div"><input title='Must be preceded by the country prefix number (E.g. +34 for spanish numbers).' type="tel" name="phone" id="phone" required><span></span></div>
+                    <div class="input-div"><input title='Must be preceded by the country prefix number (E.g. +34 for spanish numbers).' type="text" name="phone" id="phone" pattern="^((\+)[0-9]{1,3})(?:[0-9a-zA-Z ]+)?[0-9a-zA-Z]$" required><span></span></div>
                     <p>*Must be preceded by the country prefix number (E.g. +34 for spanish numbers).</p>
                 </fieldset>
             </div>
@@ -57,21 +57,24 @@
             <div>
                 <fieldset>
                     <label for="password">PASSWORD</label>
-                    <div class="input-div"><input title="Must be at least 8 characters and contain upper-case and lower-case letters, numbers, and special characters." type="text" name="password" id="password" pattern="[a-zA-Z0-9]{8,}" required><span></span></div>
+                    <div class="input-div"><input title="Must be at least 8 characters, contain upper-case and lower-case letters, and numbers." type="password" name="password" id="password" pattern="[a-zA-Z0-9]{8,}" required><span></span></div>
+                    <p id="no-match-p"></p>
                     <p>*Must be at least 8 characters.</p>
-                    <p>*Must contain upper-case and lower-case letters, numbers, and special characters.</p>
+                    <p>*Must contain upper-case and lower-case letters, and numbers.</p>
                 </fieldset>
                 <fieldset>
                     <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <div class="input-div"><input title="Must be at least 8 characters and contain upper-case and lower-case letters, numbers, and special characters." type="password" name="password-confirm" id="password-confirm" pattern="[a-zA-Z0-9]{8,}" required><span></span></div>
+                    <div class="input-div"><input title="Must be at least 8 characters, contain upper-case and lower-case letters, and numbers." type="password" name="password-confirm" id="password-confirm" pattern="[a-zA-Z0-9]{8,}" required><span></span></div>
+                    <p id="no-match-cp"></p>
                     <p>*Must be at least 8 characters.</p>
-                    <p>*Must contain upper-case and lower-case letters, numbers, and special characters.</p>
+                    <p>*Must contain upper-case and lower-case letters, and numbers.</p>
                 </fieldset>
             </div>
-            <button type="submit">Create Account</button>
+            <button id="button" type="submit">Create Account</button>
         </form>
         <p class="login">Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
-<script src="./js/javascript.js" defer></script>
+<script src="../js/javascript.js" defer></script>
 </html>
+
