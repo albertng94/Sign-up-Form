@@ -15,8 +15,8 @@ function passwordMatch() {
     } else if (password.value !== "" && password.value === confirmPassword.value) {
         noMatchCP.textContent = "*Passwords match!";
         noMatchP.textContent = "*Passwords match!";
-        noMatchCP.style.color = "white";
-        noMatchP.style.color = "white";
+        noMatchCP.style.color = "rgb(196, 196, 196)";
+        noMatchP.style.color = "rgb(196, 196, 196)";
     }
 }
 
@@ -39,6 +39,7 @@ function styleInputElements() {
         input.addEventListener("focusout", () => {
             const computedStyle = window.getComputedStyle(input);
             const inputColor = computedStyle.color;
+            console.log(inputColor);
 
             // Style labels and cue paragraphs red when input is invalid (color rgb(237, 94, 94))
 
@@ -55,10 +56,10 @@ function styleInputElements() {
                 }
             } 
             
-            // Style labels white and cue paragraphs transparent when input is valid (color rgb(98, 98, 97))
+            // Style labels white and cue paragraphs transparent when input is valid (color rgb(196, 196, 196))
 
-            else if (inputColor === "rgb(98, 98, 97)") {
-                input.parentNode.previousElementSibling.style.color = "rgb(98, 98, 97)";
+            else if (inputColor === "rgb(196, 196, 196)") {
+                input.parentNode.previousElementSibling.style.color = "rgb(196, 196, 196)";
 
                 if (input.id === "name" || input.id === "surname" || input.id === "phone") {
                     input.parentNode.nextElementSibling.style.color = "transparent";
@@ -73,11 +74,15 @@ function styleInputElements() {
 
         // Style cue paragraphs white when the input field is the current focus and has some value.
 
-        input.addEventListener("focusin", () => {
-            const computedStyle = window.getComputedStyle(input);
-            const inputColor = computedStyle.color;
+        input.addEventListener("focus", () => {
+            
+            // Style associated labels white when focusing an input element.
 
-            if (inputColor !== "rgb(237, 94, 94)" && input.value) {
+            input.parentNode.previousElementSibling.style.color = "rgb(196, 196, 196)";
+
+            // Style cue paragraphs white when the input field is the current focus and has some value.
+
+            if (input.value) {
                 if (input.id === "name" || input.id === "surname" || input.id === "phone") {
                     input.parentNode.nextElementSibling.style.color = "rgb(196, 196, 196)";
                 } 
