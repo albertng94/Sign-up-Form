@@ -39,7 +39,6 @@ function styleInputElements() {
         input.addEventListener("focusout", () => {
             const computedStyle = window.getComputedStyle(input);
             const inputColor = computedStyle.color;
-            console.log(inputColor);
 
             // Style labels and cue paragraphs red when input is invalid (color rgb(237, 94, 94))
 
@@ -72,7 +71,7 @@ function styleInputElements() {
             }
         });
 
-        // Style cue paragraphs white when the input field is the current focus and has some value.
+        // Style labels and cue paragraphs white when the input field is the current focus (paragraphs only when it has some value)
 
         input.addEventListener("focus", () => {
             
@@ -105,8 +104,34 @@ const submitButton = document.getElementById("button");
 
 function noSubmit() {
     submitButton.addEventListener("click",function(event) {
-        event.preventDefault();
-        alert("Passwords do not match! Please fix it before submitting the form.");
+        
+        const name1 = document.getElementById("name");
+        const surname = document.getElementById("surname");
+        const email = document.getElementById("email");
+        const phone = document.getElementById("phone");
+
+        const computedStyleName = window.getComputedStyle(name1);
+        const computedStyleSurname = window.getComputedStyle(surname);
+        const computedStyleEmail = window.getComputedStyle(email);
+        const computedStylePhone = window.getComputedStyle(phone);
+        const computedStylePassword = window.getComputedStyle(password);
+        const computedStyleConfirmPassword = window.getComputedStyle(confirmPassword);
+
+        console.log(computedStyleName.color);
+        const nameColor = computedStyleName.getPropertyValue("color");
+        const surnameColor = computedStyleSurname.getPropertyValue("color");
+        const emailColor = computedStyleEmail.getPropertyValue("color");
+        const phoneColor = computedStylePhone.getPropertyValue("color");
+        const passwordColor = computedStylePassword.getPropertyValue("color");
+        const confirmPasswordColor = computedStyleConfirmPassword.getPropertyValue("color");
+
+        if (password.value !== confirmPassword.value) {
+            event.preventDefault();
+            alert("Passwords do not match! Please fix this issue before submitting the form.");
+        } 
+        else if (nameColor === "rgb(196, 196, 196)" && surnameColor === "rgb(196, 196, 196)" && emailColor === "rgb(196, 196, 196)" && phoneColor === "rgb(196, 196, 196)" && passwordColor === "rgb(196, 196, 196)" && confirmPasswordColor === "rgb(196, 196, 196)") {
+            alert(`Thank you ${name1.value} ${surname.value}! Your Routemap account has successfully been created.`);
+        }
     });
 }
 

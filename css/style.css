@@ -140,7 +140,6 @@ fieldset > p {
     line-height: calc(0.75ex / 0.32);
     color: transparent;
     width: max(300px, 20vw);
-    /*position: absolute;*/
 }
 
 button {
