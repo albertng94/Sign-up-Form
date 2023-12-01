@@ -57,16 +57,16 @@
             <div>
                 <fieldset>
                     <label for="password">PASSWORD</label>
-                    <div class="input-div"><input title="Must be at least 8 characters, contain upper-case and lower-case letters, and numbers." type="password" name="password" id="password" pattern="[a-zA-Z0-9]{8,}" required><span></span></div>
+                    <div class="input-div"><input title="Must be at least 8 characters, contain upper-case and lower-case letters, and numbers." type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,20}$" required><span></span></div>
                     <p id="no-match-p"></p>
-                    <p>*Must be at least 8 characters.</p>
+                    <p>*Must be between 8 and 20 characters.</p>
                     <p>*Must contain upper-case and lower-case letters, and numbers.</p>
                 </fieldset>
                 <fieldset>
                     <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <div class="input-div"><input title="Must be at least 8 characters, contain upper-case and lower-case letters, and numbers." type="password" name="password-confirm" id="password-confirm" pattern="[a-zA-Z0-9]{8,}" required><span></span></div>
+                    <div class="input-div"><input title="Must be at least 8 characters, contain upper-case and lower-case letters, and numbers." type="password" name="password-confirm" id="password-confirm" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,20}$" required><span></span></div>
                     <p id="no-match-cp"></p>
-                    <p>*Must be at least 8 characters.</p>
+                    <p>*Must be between 8 and 20 characters.</p>
                     <p>*Must contain upper-case and lower-case letters, and numbers.</p>
                 </fieldset>
             </div>
