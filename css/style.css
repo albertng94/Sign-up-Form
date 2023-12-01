@@ -240,12 +240,6 @@ input:user-invalid + span::after {
     top: 3px;
 }
 
-fieldset:focus-within > p {
+/* fieldset:focus-within > p {
     color: white;
-}
-
-/*Faltará pintar de rojo labels y los p cuando input esté en rojo.
-
-Comparar con otros navegadores y ver si hay diferencias en los forms. 
-Si así fuera, utilizar "all: unset" para quitar el styling de estos y
-re-hacerlo totalmente.
+} */
