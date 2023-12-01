@@ -4,7 +4,7 @@ html {
     height: 99vh;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    font-size: calc(12px + 0.5vh);
+    font-size: calc(12px + 0.4vh);
     color: rgb(196, 196, 196);
 }
     
@@ -34,7 +34,7 @@ body {
 }
     
 #header-div > img {
-    width: 180px;
+    width: 162px;
     height: auto;
     position: relative;
     top: 25px;
