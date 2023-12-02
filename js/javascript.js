@@ -98,11 +98,11 @@ function styleInputElements() {
 styleInputElements();
 
 
-// Unable to submit the form when passwords match pattern criteria but do not match
+// Unable to submit the form when passwords match pattern criteria but do not match, able to do so when all the camps are correctly filled and both passwords match
 
 const submitButton = document.getElementById("button");
 
-function noSubmit() {
+function submit() {
     submitButton.addEventListener("click",function(event) {
         
         const name1 = document.getElementById("name");
@@ -117,7 +117,6 @@ function noSubmit() {
         const computedStylePassword = window.getComputedStyle(password);
         const computedStyleConfirmPassword = window.getComputedStyle(confirmPassword);
 
-        console.log(computedStyleName.color);
         const nameColor = computedStyleName.getPropertyValue("color");
         const surnameColor = computedStyleSurname.getPropertyValue("color");
         const emailColor = computedStyleEmail.getPropertyValue("color");
@@ -135,4 +134,4 @@ function noSubmit() {
     });
 }
 
-noSubmit();
+submit();
